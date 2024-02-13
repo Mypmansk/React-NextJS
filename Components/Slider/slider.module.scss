@@ -1,0 +1,16 @@
+.sliderBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.sliderBox {
+  position: relative;
+}
+.sliderItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 610px;
+}

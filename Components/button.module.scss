@@ -1,0 +1,18 @@
+@import "../app/fonts";
+.button {
+  @extend %font-button;
+  box-sizing: border-box;
+  width: 260px;
+  min-height: 60px;
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  background: linear-gradient(0deg, #ffb548 10%, #f3af34 100%);
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: linear-gradient(0deg, #ffb548 10%, #d88e05 100%);
+}

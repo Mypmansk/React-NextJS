@@ -1,0 +1,28 @@
+.formBox {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.inputBlock {
+  display: grid;
+
+  width: 366px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 5px 25px;
+
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  span {
+    align-self: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+  }
+  input {
+    all: unset;
+    color: rgba(255, 181, 72, 1);
+  }
+  input::placeholder {
+    color: rgba(255, 181, 72, 1);
+  }
+}

@@ -1,0 +1,202 @@
+@import "fonts";
+
+%block-background {
+  width: 100%;
+  min-height: 950px;
+  max-height: 950px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+%block-background {
+  width: 100%;
+  min-height: 950px;
+  max-height: 950px;
+
+  @media (max-width: 767px) {
+    min-height: 580px;
+    max-height: 950px;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main {
+  @extend %font-main;
+}
+
+.storyButton {
+  position: absolute;
+  bottom: 75px;
+}
+
+.mainPage {
+  @extend %block-background;
+  background-image: url("../public/img/Main/main1x.jpg");
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    text-align: center;
+    // h1 {
+    //   margin-bottom: 10px;
+    // }
+    p {
+      line-height: 24px;
+      //   font-size: 24px;
+      letter-spacing: 2px;
+    }
+  }
+  .button {
+    margin-top: 30px;
+    span:last-child::before {
+      content: " | ";
+    }
+  }
+}
+
+.aboutPage {
+  @extend %block-background;
+  background-image: url("../public/img/About/about1x.jpg");
+
+  display: flex;
+  align-items: center;
+}
+
+.featuresPage {
+  @extend %block-background;
+  background-image: url("../public/img/Features/Features1x.jpg");
+
+  display: flex;
+  align-items: center;
+}
+.featureWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.featureBlock {
+  max-width: 400px;
+}
+
+.requirementsPage {
+  @extend %block-background;
+  background-image: url("../public/img/Requirements/Requirements1x.jpg");
+
+  display: flex;
+  align-items: center;
+}
+.quotesPage {
+  @extend %block-background;
+  background-image: url("../public/img/Quotes/Quotes1x.jpg");
+
+  display: flex;
+
+  button {
+    margin-top: 40px;
+  }
+}
+.subscribePage {
+  width: 100%;
+  min-height: 950px;
+  max-height: auto;
+  background-color: #080a0b;
+
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  width: auto;
+}
+.adoutBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 320px) and (max-width: 1199px) {
+    justify-items: center;
+  }
+}
+.aboutTextBlock {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  position: relative;
+}
+.aboutTextBlock::after {
+  content: "";
+  width: 710px;
+  border-top: solid 3px white;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.aboutText {
+  max-width: 365px;
+  margin-top: 60px;
+}
+.requirementsHeader {
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+.requirementsTable {
+  margin-top: calc(100vh / 6);
+  border: 1px solid #979797;
+  border-collapse: collapse;
+  td {
+    max-width: 290px;
+    padding: 15px 15px;
+  }
+
+  td,
+  th {
+    border: 1px solid #979797;
+  }
+  h3 {
+    @extend %font-h3-requirements;
+    margin-top: 0px;
+  }
+}
+
+.quotes {
+  box-sizing: border-box;
+  max-width: 435px;
+  p {
+    margin-top: 30px;
+  }
+}
+
+.subscribeBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.subscribeBlockItem {
+  max-width: 650px;
+}
+.subscribeImg {
+  max-width: 450px;
+  max-height: 650px;
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    max-width: 320px;
+    max-height: 500px;
+  }
+}

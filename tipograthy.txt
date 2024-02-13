@@ -1,0 +1,30 @@
+@text on the shit@
+Open Sans
+fs=18px
+lh=22px
+
+@header|footer@
+Open Sans
+fs=12px
+lh=16px
+
+
+@H1@
+Bebas Neue
+fs=80px
+lh=80px
+ls=3px
+
+
+@H3@
+Bebas Neue
+fs=24px
+lh=24px
+ls=2px
+
+
+@buttons@
+Open Sans
+fs=16px
+lh=22px
+ls=2px

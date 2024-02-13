@@ -1,0 +1,64 @@
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  //   gap: 80px;
+  align-items: center;
+}
+.footerNav::after {
+  content: "";
+
+  position: absolute;
+  top: 110px;
+
+  width: 1200px;
+  height: 1px;
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+}
+.soc {
+  background: red;
+}
+.copyrightBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  p {
+    font-size: 14px;
+    opacity: 0.5;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 445px;
+    li {
+      list-style: none;
+      text-transform: uppercase;
+    }
+  }
+}
+.copyrightList {
+  display: flex;
+  font-size: 12px;
+
+  :not(:last-child)::after {
+    content: " |\a0";
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

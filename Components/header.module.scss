@@ -1,0 +1,53 @@
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.langContactBlock {
+  display: flex;
+  gap: 50px;
+  @media (max-width: 767px) {
+    gap: 30px;
+  }
+}
+.langBlock {
+  margin: auto 0;
+}
+.contactBlock {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+
+  @media (max-width: 840px) {
+    display: none;
+  }
+}
+.icon {
+  transition: 0.5s;
+}
+.icon:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.navTrigger {
+  /* critical styles - hide the checkbox input */
+  display: none;
+}
+.dropMenu {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  display: flex;
+  align-self: center;
+  height: 18px;
+  width: 24px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='18' viewBox='0 0 25 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='9.49854' y='15.0166' width='14.585' height='2.5' rx='1.25' fill='white'/%3E%3Crect x='0.596191' y='7.51657' width='23.4873' height='2.5' rx='1.25' fill='white'/%3E%3Crect x='0.596191' y='0.016571' width='23.4873' height='2.5' rx='1.25' fill='white'/%3E%3C/svg%3E");
+
+  background-size: cover;
+}

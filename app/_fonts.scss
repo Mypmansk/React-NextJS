@@ -1,0 +1,87 @@
+%font-main {
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  font-size: 14px;
+  line-height: 22px;
+}
+%font-header-footer {
+  font-size: 12px;
+  line-height: 16px;
+}
+%font-h1 {
+  @media (min-width: 1200px) {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: 2px;
+  }
+
+  font-size: 33px;
+  line-height: 33px;
+  letter-spacing: 1px;
+}
+%font-h2 {
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 2px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 2px;
+  }
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+
+  color: #ffb548;
+}
+
+%font-h3 {
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 2px;
+  }
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+
+%font-h3-requirements {
+  color: #ffb548;
+}
+%font-button {
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000;
+}
+%font-transparent-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+@media (min-width: 320px) and (max-width: 767px) {
+}

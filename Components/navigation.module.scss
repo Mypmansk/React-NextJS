@@ -1,0 +1,44 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+//Разобраться с этим FONT он тут не нужен
+.menuList {
+  display: flex;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+
+    display: none;
+  }
+
+  gap: 30px;
+  align-items: center;
+
+  list-style: none;
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  a:hover {
+    color: #f3af34;
+  }
+}
+.openned {
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
