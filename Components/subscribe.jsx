@@ -4,7 +4,7 @@ import styles from "./subscribe.module.scss";
 
 const openSans = Open_Sans({ weight: "700", subsets: ["latin"] });
 
-export default function SubscribeSection() {
+export default function Subscribe() {
   return (
     <form className={styles.formBox}>
       {/* <label for="name">Your email address </label> */}

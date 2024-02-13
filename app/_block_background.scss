@@ -1,0 +1,14 @@
+%block-background {
+  width: 100%;
+  min-height: 950px;
+  max-height: 950px;
+
+  @media (max-width: 767px) {
+    min-height: 580px;
+    max-height: 950px;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

@@ -1,0 +1,31 @@
+@import "../app/block_background";
+
+.quotesPage {
+  @extend %block-background;
+  background-image: url("../public/img/Quotes/Quotes1x.jpg");
+
+  display: flex;
+
+  button {
+    margin-top: 40px;
+  }
+}
+.adoutBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 320px) and (max-width: 1199px) {
+    justify-items: center;
+  }
+}
+.quotes {
+  box-sizing: border-box;
+  max-width: 435px;
+  p {
+    margin-top: 30px;
+  }
+}

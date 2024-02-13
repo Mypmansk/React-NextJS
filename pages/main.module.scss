@@ -1,0 +1,28 @@
+@import "../app/block_background";
+.mainPage {
+  @extend %block-background;
+  background-image: url("../public/img/Main/main1x.jpg");
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    text-align: center;
+    p {
+      line-height: 24px;
+      letter-spacing: 2px;
+    }
+  }
+}
+.button {
+  margin-top: 30px;
+  span:last-child::before {
+    content: " | ";
+  }
+}
+.storyButton {
+  position: absolute;
+  bottom: 75px;
+}

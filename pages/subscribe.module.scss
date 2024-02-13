@@ -1,0 +1,29 @@
+.subscribePage {
+  width: 100%;
+  min-height: 950px;
+  max-height: auto;
+  background-color: #080a0b;
+
+  display: flex;
+  align-items: center;
+}
+.subscribeBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.subscribeBlockItem {
+  max-width: 650px;
+}
+.subscribeImg {
+  max-width: 450px;
+  max-height: 650px;
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    max-width: 320px;
+    max-height: 500px;
+  }
+}
