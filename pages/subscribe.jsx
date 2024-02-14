@@ -9,7 +9,7 @@ const bebas = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
 export default function SubscribePage() {
   return (
-    <section className={styles.subscribePage}>
+    <section id="subscribe" className={styles.subscribePage}>
       <WrapperLayout style={styles.subscribeBlock}>
         <Image
           className={styles.subscribeImg}

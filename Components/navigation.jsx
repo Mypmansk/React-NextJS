@@ -23,6 +23,9 @@ export default function Navigation(props) {
         <li>
           <a href="#quotes">Quotes</a>
         </li>
+        <li>
+          <a href="#subscribe">Subscribe</a>
+        </li>
       </ul>
     </nav>
   );

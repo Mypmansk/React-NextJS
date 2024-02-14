@@ -2,12 +2,13 @@ import styles from "./about.module.scss";
 import WrapperLayout from "@/app/wrapperLayout";
 import Slider from "@/Components/Slider/slider";
 import { Bebas_Neue } from "next/font/google";
+import { forwardRef } from "react";
 
 const bebas = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
-export default function AboutPage() {
+const AboutPage = forwardRef(function AboutPage(props, ref) {
   return (
-    <section id="about" className={styles.aboutPage}>
+    <section {...props} ref={ref} id="about" className={styles.aboutPage}>
       <WrapperLayout style={styles.adoutBlock}>
         <div className={styles.about}>
           <h3 className={bebas.className}>What is SOS?</h3>
@@ -27,4 +28,5 @@ export default function AboutPage() {
       </WrapperLayout>
     </section>
   );
-}
+});
+export default AboutPage;

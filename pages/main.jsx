@@ -5,7 +5,11 @@ import { Bebas_Neue } from "next/font/google";
 
 const bebas = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
-export default function MainPage() {
+export default function MainPage(props) {
+  const handleClick = () => {
+    props.inputRef.current.scrollIntoView();
+  };
+
   return (
     <section id="main" className={styles.mainPage}>
       <div>
@@ -20,7 +24,7 @@ export default function MainPage() {
       </div>
       <div className={styles.storyButton}>
         <p>The story</p>
-        <ArrowButton />
+        <ArrowButton onClick={handleClick} />
       </div>
     </section>
   );

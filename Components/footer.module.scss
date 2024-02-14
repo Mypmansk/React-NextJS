@@ -3,6 +3,11 @@
   bottom: 0px;
   left: 0;
   right: 0;
+
+  @media (max-width: 767px) {
+    position: relative;
+    background-color: black;
+  }
 }
 .footerNav {
   display: flex;
@@ -12,16 +17,10 @@
   //   gap: 80px;
   align-items: center;
 }
-.footerNav::after {
-  content: "";
-
-  position: absolute;
-  top: 110px;
-
-  width: 1200px;
-  height: 1px;
-  display: block;
-  background: rgba(255, 255, 255, 0.5);
+.foterMenu {
+  @media (max-width: 767px) {
+    position: relative;
+  }
 }
 .soc {
   background: red;
