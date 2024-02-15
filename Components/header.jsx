@@ -15,9 +15,9 @@ export default function Header() {
     <header className={styles.header}>
       <WrapperLayout mode={"header"}>
         <Logo ImageHeight={55} ImageWidth={55} />
-        <Navigation isOpened={isOpened} />
+        <Navigation isOpened={isOpened} navPosition="header" />
         <div className={styles.langContactBlock}>
-          <div className={styles.langBlock}>
+          {/* <div className={styles.langBlock}>
             <label htmlFor="lang-select" style={{ display: "none" }}>
               Choose a leng:
             </label>
@@ -27,7 +27,7 @@ export default function Header() {
               <option value="franch">FRA</option>
               <option value="deutch">DEU</option>
             </select>
-          </div>
+          </div> */}
           <div className={styles.contactBlock}>
             <a href="#">
               <Image

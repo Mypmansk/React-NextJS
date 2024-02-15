@@ -29,4 +29,7 @@
     @extend %font-h3-requirements;
     margin-top: 0px;
   }
+  @media (min-width: 320px) and (max-width: 768px) {
+    margin: calc(100vh / 6) auto;
+  }
 }

@@ -3,12 +3,12 @@
   justify-content: space-between;
   font-size: 12px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     flex-direction: column;
   }
 }
 //Разобраться с этим FONT он тут не нужен
-.menuList {
+.menuListHeader {
   display: flex;
 
   @media (max-width: 767px) {
@@ -16,7 +16,7 @@
     top: 50px;
     right: 0;
     flex-direction: column;
-    gap: 15px;
+    gap: 0px;
     align-items: flex-end;
 
     display: none;
@@ -32,13 +32,44 @@
     color: inherit;
     font-weight: 700;
     letter-spacing: 2px;
+
+    @media (max-width: 767px) {
+      font-size: 10px;
+    }
   }
   a:hover {
     color: #f3af34;
   }
 }
-.openned {
+.opennedHeader {
   @media (max-width: 767px) {
     display: flex;
+  }
+}
+.menuListFooter {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  list-style: none;
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    @media (max-width: 767px) {
+      font-size: 10px;
+    }
+  }
+  a:hover {
+    color: #f3af34;
   }
 }

@@ -10,7 +10,7 @@ export default function Footer() {
       <WrapperLayout mode={"footer"}>
         <div className={styles.footerNav}>
           <Logo ImageHeight={90} ImageWidth={90} />
-          <Navigation />
+          <Navigation navPosition="footer" />
           <Socials />
         </div>
         <div className={styles.copyrightBlock}>

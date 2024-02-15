@@ -2,12 +2,19 @@ import cn from "classnames";
 import styles from "./navigation.module.scss";
 
 export default function Navigation(props) {
+  let stylesheet;
+
+  if (props.navPosition === "header") {
+    stylesheet = props.isOpened
+      ? styles.menuListHeader
+      : cn(styles.menuListHeader, styles.opennedHeader);
+  } else {
+    stylesheet = styles.menuListFooter;
+  }
+
   return (
     <nav className={styles.navigation}>
-      <ul
-        className={
-          props.isOpened ? styles.menuList : cn(styles.menuList, styles.openned)
-        }>
+      <ul className={stylesheet}>
         <li>
           <a href="#main">Main</a>
         </li>

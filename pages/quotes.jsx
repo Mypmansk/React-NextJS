@@ -19,7 +19,7 @@ export default function QuotesPage() {
             our services to make it better every day and really listen to what
             our users has to say.
           </p>
-          <Button>
+          <Button style={styles.byyy}>
             <span>Read more testimonials</span>
           </Button>
         </div>
