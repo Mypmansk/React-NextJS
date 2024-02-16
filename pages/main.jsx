@@ -2,6 +2,7 @@ import styles from "./main.module.scss";
 import Button from "@/Components/button";
 import ArrowButton from "@/Components/arrowButton";
 import { Bebas_Neue } from "next/font/google";
+import Popup from "@/Components/popup";
 
 const bebas = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
@@ -17,7 +18,11 @@ export default function MainPage(props) {
         <h3 className={bebas.className}>
           Experience new social battle royale game
         </h3>
-        <Button style={styles.button}>
+        <Button
+          style={styles.button}
+          onClick={() => {
+            return true;
+          }}>
           <span>Buy Now on Steam</span>
           <span>$14.99</span>
         </Button>

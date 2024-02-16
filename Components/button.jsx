@@ -8,7 +8,8 @@ export default function Button(props) {
   return (
     <button
       className={cn(openSans.className, props.style, styles.button)}
-      type="button">
+      type="button"
+      onClick={props.onClick}>
       {props.children}
     </button>
   );

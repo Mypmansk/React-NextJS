@@ -1,0 +1,25 @@
+@import "../app/fonts";
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.popupText {
+  @extend %font-h3;
+}
+.hidden {
+  display: none;
+  color: red;
+}
