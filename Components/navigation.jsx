@@ -1,6 +1,6 @@
 import cn from "classnames";
 import styles from "./navigation.module.scss";
-
+import Link from "next/link";
 export default function Navigation(props) {
   let stylesheet;
 
@@ -16,22 +16,22 @@ export default function Navigation(props) {
     <nav className={styles.navigation}>
       <ul className={stylesheet}>
         <li>
-          <a href="#main">Main</a>
+          <Link href="#main">Main</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link href="#about">About</Link>
         </li>
         <li>
-          <a href="#feature">Game features</a>
+          <Link href="#feature">Game features</Link>
         </li>
         <li>
-          <a href="#requirements">System requirements</a>
+          <Link href="#requirements">System requirements</Link>
         </li>
         <li>
-          <a href="#quotes">Quotes</a>
+          <Link href="#quotes">Quotes</Link>
         </li>
         <li>
-          <a href="#subscribe">Subscribe</a>
+          <Link href="#subscribe">Subscribe</Link>
         </li>
       </ul>
     </nav>

@@ -6,7 +6,6 @@ import Image from "next/image";
 import firstImage from "../../public/img/Slider/image1.png";
 import fsecondImage from "../../public/img/Slider/image2.png";
 import thirdImage from "../../public/img/Slider/image3.png";
-import cn from "classnames";
 import ArrowButton from "../arrowButton";
 
 export default function Slider() {
@@ -52,19 +51,13 @@ export default function Slider() {
   return (
     <section className={styles.sliderBlock}>
       <div className={styles.sliderBox}>
-        <motion.div
-          className={cn(styles.sliderItem, styles.firstBlock)}
-          animate={firsBlockPosition}>
+        <motion.div className={styles.sliderItem} animate={firsBlockPosition}>
           <Image src={firstImage} fill alt="logo" />
         </motion.div>
-        <motion.div
-          className={cn(styles.sliderItem, styles.secondBlock)}
-          animate={secondBlockPosition}>
+        <motion.div className={styles.sliderItem} animate={secondBlockPosition}>
           <Image src={fsecondImage} fill alt="logo" />
         </motion.div>
-        <motion.div
-          className={cn(styles.sliderItem, styles.thirdBlock)}
-          animate={thirdBlockPosition}>
+        <motion.div className={styles.sliderItem} animate={thirdBlockPosition}>
           <Image src={thirdImage} fill alt="logo" />
         </motion.div>
       </div>

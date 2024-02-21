@@ -10,7 +10,6 @@
 .adoutBlock {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
 
   @media (min-width: 1200px) {
     grid-template-columns: 1fr 1fr;
@@ -29,16 +28,19 @@
 
   position: relative;
 }
-.aboutTextBlock::after {
-  content: "";
-  width: 710px;
-  border-top: solid 3px white;
+@media (min-width: 1200px) {
+  .aboutTextBlock::after {
+    content: "";
+    width: 710px;
+    border-top: solid 3px white;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
+
 .aboutText {
   max-width: 365px;
   margin-top: 60px;
