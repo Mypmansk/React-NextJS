@@ -2,12 +2,12 @@ import styles from "./page.module.scss";
 import Header from "../Components/header";
 import Footer from "@/Components/footer";
 
-import MainPage from "@/pages/main";
-import AboutPage from "@/pages/about";
-import FeaturePage from "@/pages/feature";
-import RequirementsPage from "@/pages/requirements";
-import QuotesPage from "@/pages/quotes";
-import SubscribePage from "@/pages/subscribe";
+import MainPage from "@/Components/Sections/main";
+import AboutPage from "@/Components/Sections/about";
+import FeaturePage from "@/Components/Sections/feature";
+import RequirementsPage from "@/Components/Sections/requirements";
+import QuotesPage from "@/Components/Sections/quotes";
+import SubscribePage from "@/Components/Sections/subscribe";
 
 export default function Home() {
   return (

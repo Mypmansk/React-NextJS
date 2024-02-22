@@ -2,7 +2,7 @@ import styles from "./subscribe.module.scss";
 import { Bebas_Neue } from "next/font/google";
 import WrapperLayout from "@/app/wrapperLayout";
 import Image from "next/image";
-import SubscribeImg from "../public/img/subscribe.png";
+import SubscribeImg from "../../public/img/subscribe.png";
 import SubscribeSection from "@/Components/subscribeSection";
 
 const bebas = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });

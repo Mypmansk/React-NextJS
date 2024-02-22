@@ -7,6 +7,7 @@ import Navigation from "./navigation";
 import WrapperLayout from "@/app/wrapperLayout";
 import Logo from "./Logo";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpened, setIsOpened] = useState(true);
@@ -17,19 +18,8 @@ export default function Header() {
         <Logo ImageHeight={55} ImageWidth={55} />
         <Navigation isOpened={isOpened} navPosition="header" />
         <div className={styles.langContactBlock}>
-          {/* <div className={styles.langBlock}>
-            <label htmlFor="lang-select" style={{ display: "none" }}>
-              Choose a leng:
-            </label>
-            <select name="lang" id="lang-select" style={{ cursor: "pointer" }}>
-              <option value="english">ENG</option>
-              <option value="russian">RUS</option>
-              <option value="franch">FRA</option>
-              <option value="deutch">DEU</option>
-            </select>
-          </div> */}
           <div className={styles.contactBlock}>
-            <a href="#">
+            <Link href="/popup">
               <Image
                 src={xboxIcon}
                 height={30}
@@ -37,8 +27,8 @@ export default function Header() {
                 alt="xbox logo"
                 className={styles.icon}
               />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="/popup">
               <Image
                 src={steamIcon}
                 height={30}
@@ -46,7 +36,7 @@ export default function Header() {
                 alt="staeam logo"
                 className={styles.icon}
               />
-            </a>
+            </Link>
           </div>
           <div
             className={styles.dropMenu}

@@ -1,8 +1,8 @@
-@import "../app/block_background";
+@import "@/app/block_background";
 
 .aboutPage {
   @extend %block-background;
-  background-image: url("../public/img/About/about1x.jpg");
+  background-image: url("../../public/img/About/about1x.jpg");
 
   display: flex;
   align-items: center;

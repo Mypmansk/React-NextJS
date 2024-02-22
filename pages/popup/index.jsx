@@ -6,7 +6,7 @@ export default function Popup() {
     <div className={styles.popup}>
       <div className={styles.popupText}>Is coming soon...</div>
       <Link href="/">
-        <button>
+        <button type="button">
           <span>Ok</span>
         </button>
       </Link>

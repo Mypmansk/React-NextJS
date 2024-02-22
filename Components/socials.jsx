@@ -3,22 +3,23 @@ import FacebookIcon from "./SocialBars/facebookIcon";
 import TwitchIcon from "./SocialBars/twitchIcon";
 import TwitterIcon from "./SocialBars/twitterIcon";
 import YoutybeIcon from "./SocialBars/youtybeIcon";
+import Link from "next/link";
 
 export default function Socials() {
   return (
     <div className={styles.socials}>
-      <a>
+      <Link href="/popup">
         <FacebookIcon width={25} height={25} />
-      </a>
-      <a>
+      </Link>
+      <Link href="/popup">
         <TwitchIcon width={25} height={25} />
-      </a>
-      <a>
+      </Link>
+      <Link href="/popup">
         <TwitterIcon width={25} height={25} />
-      </a>
-      <a>
+      </Link>
+      <Link href="/popup">
         <YoutybeIcon width={25} height={25} />
-      </a>
+      </Link>
     </div>
   );
 }

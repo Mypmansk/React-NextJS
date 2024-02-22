@@ -1,8 +1,8 @@
-@import "../app/block_background";
+@import "@/app/block_background";
 
 .quotesPage {
   @extend %block-background;
-  background-image: url("../public/img/Quotes/Quotes1x.jpg");
+  background-image: url("../../public/img/Quotes/Quotes1x.jpg");
 
   display: flex;
 

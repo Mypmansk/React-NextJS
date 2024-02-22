@@ -1,8 +1,8 @@
-@import "../app/block_background";
-@import "../app/fonts";
+@import "@/app/block_background";
+@import "@/app/fonts";
 .requirementsPage {
   @extend %block-background;
-  background-image: url("../public/img/Requirements/Requirements1x.jpg");
+  background-image: url("../../public/img/Requirements/Requirements1x.jpg");
 
   display: flex;
   align-items: center;

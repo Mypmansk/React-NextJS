@@ -3,6 +3,7 @@ import styles from "./footer.module.scss";
 import Navigation from "./navigation";
 import Socials from "./socials";
 import Logo from "./Logo";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,13 +18,13 @@ export default function Footer() {
           <p>© 2018 Outpost Games, Inc. All Rights Reserved</p>
           <ul className={styles.copyrightList}>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link href="/popup">Privacy Policy</Link>
             </li>
             <li>
-              <a href="#">Terms of Services</a>
+              <Link href="/popup">Terms of Services</Link>
             </li>
             <li>
-              <a href="#">Code of Conduct</a>
+              <Link href="/popup">Code of Conduct</Link>
             </li>
           </ul>
         </div>

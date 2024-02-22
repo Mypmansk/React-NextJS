@@ -1,7 +1,7 @@
-@import "../app/block_background";
+@import "@/app/block_background";
 .mainPage {
   @extend %block-background;
-  background-image: url("../public/img/Main/main1x.jpg");
+  background-image: url("../../public/img/Main/main1x.jpg");
 
   position: relative;
   display: flex;
