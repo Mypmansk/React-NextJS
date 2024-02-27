@@ -1,5 +1,5 @@
 import "./globals.scss";
-import { Open_Sans, Bebas_Neue } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import styles from "./layout.module.scss";
 import cn from "classnames";
 

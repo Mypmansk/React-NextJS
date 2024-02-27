@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import Header from "../Components/header";
+import Header from "@/Components/header";
 import Footer from "@/Components/footer";
 
 import MainPage from "@/Components/Sections/main";
