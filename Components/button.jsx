@@ -1,4 +1,3 @@
-"use client";
 import styles from "./button.module.scss";
 import cn from "classnames";
 import { Open_Sans } from "next/font/google";

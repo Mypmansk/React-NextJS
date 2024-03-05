@@ -1,8 +1,9 @@
+@import "@/app/colors";
 .subscribePage {
   width: 100%;
   min-height: 950px;
   max-height: auto;
-  background-color: #080a0b;
+  background-color: $subscribe-page-background;
 
   display: flex;
   align-items: center;

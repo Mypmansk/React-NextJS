@@ -1,5 +1,5 @@
 import Image from "next/image";
-import arrowIcon from "../public/arrowDown.svg";
+import arrowIcon from "@/public/arrowDown.svg";
 import styles from "./arrowButton.module.scss";
 import cn from "classnames";
 

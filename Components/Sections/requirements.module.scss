@@ -1,5 +1,7 @@
 @import "@/app/block_background";
 @import "@/app/fonts";
+@import "@/app/colors";
+
 .requirementsPage {
   @extend %block-background;
   background-image: url("../../public/img/Requirements/Requirements1x.jpg");
@@ -14,7 +16,7 @@
 }
 .requirementsTable {
   margin-top: calc(100vh / 6);
-  border: 1px solid #979797;
+  border: 1px solid $table-lines;
   border-collapse: collapse;
   td {
     max-width: 290px;
@@ -23,7 +25,7 @@
 
   td,
   th {
-    border: 1px solid #979797;
+    border: 1px solid $table-lines;
   }
   h3 {
     @extend %font-h3-requirements;

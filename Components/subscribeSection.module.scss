@@ -1,3 +1,4 @@
+@import "@/app/colors";
 .formBox {
   display: flex;
   flex-wrap: wrap;
@@ -18,18 +19,18 @@
   box-sizing: border-box;
   padding: 5px 25px;
 
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: $transparent-block;
   border-radius: 5px;
   span {
     align-self: center;
-    color: rgba(255, 255, 255, 0.5);
+    color: $transparent-text;
     font-size: 14px;
   }
   input {
     all: unset;
-    color: rgba(255, 181, 72, 1);
+    color: $input-text;
   }
   input::placeholder {
-    color: rgba(255, 181, 72, 1);
+    color: $input-text;
   }
 }

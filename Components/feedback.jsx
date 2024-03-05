@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Bebas_Neue } from "next/font/google";
-import twitter from "../public/twitter.svg";
+import twitter from "@/public/twitter.svg";
 import styles from "./feedback.module.scss";
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"] });

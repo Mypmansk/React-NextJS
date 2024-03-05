@@ -1,3 +1,4 @@
+@import "@/app/colors";
 .footer {
   position: absolute;
   bottom: 0px;
@@ -6,7 +7,7 @@
 
   @media (max-width: 1199px) {
     position: relative;
-    background-color: black;
+    background-color: $footer-background;
   }
 }
 .footerNav {
@@ -25,9 +26,7 @@
     position: relative;
   }
 }
-.soc {
-  background: red;
-}
+
 .copyrightBlock {
   display: flex;
   justify-content: space-between;

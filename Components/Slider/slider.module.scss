@@ -15,11 +15,7 @@
   position: relative;
   width: 50vw;
 
-  @media (min-width: 768px) and (max-width: 1199px) {
-    width: 85vw;
-  }
-
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     width: 85vw;
   }
 }

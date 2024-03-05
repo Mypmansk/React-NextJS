@@ -1,4 +1,5 @@
-@import "../app/fonts";
+@import "@/app/fonts";
+@import "@/app/colors";
 
 .feedbackBlock {
   @media (min-width: 320px) and (max-width: 767px) {
@@ -15,7 +16,7 @@
   height: auto;
   padding: 20px;
 
-  background: rgba(#fff, 0.08);
+  background: rgba(white, 0.08);
   border-radius: 15px;
   span {
     @extend %font-h3;
@@ -39,7 +40,7 @@
   width: 65px;
   height: 65px;
   border-radius: 65px;
-  background-color: rgba(255, 181, 72, 1);
+  background-color: $heading;
 }
 
 .feedbackUser {

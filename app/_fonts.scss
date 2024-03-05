@@ -1,3 +1,5 @@
+@import "colors";
+
 %font-main {
   @media (min-width: 1200px) {
     font-size: 18px;
@@ -41,7 +43,7 @@
   line-height: 16px;
   letter-spacing: 1px;
 
-  color: #ffb548;
+  color: $heading;
 }
 
 %font-h3 {
@@ -61,7 +63,7 @@
 }
 
 %font-h3-requirements {
-  color: #ffb548;
+  color: $heading;
 }
 %font-button {
   @media (min-width: 768px) {
@@ -71,12 +73,12 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  color: #000;
+  color: $button-text;
 }
 %font-transparent-text {
   font-size: 14px;
   line-height: 20px;
-  color: rgb(255, 255, 255, 0.5);
+  color: $transparent-text;
 }
 
 @media (min-width: 1200px) {
